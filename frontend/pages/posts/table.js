@@ -212,18 +212,18 @@ export default function TablePage() {
         timeRoundDecimal = time.toFixed(2)
 
         //ALERTAS
-        if(data[key].x > xLimit){
-          timeRoundAlerta=data[key].timestamp-firsttime
+        if(data[lastKey].x > xLimit){
+          timeRoundAlerta=data[lastKey].timestamp-firsttime
           timeRoundAlerta = timeRoundAlerta.toFixed(2)
           xAlertArray.push(timeRoundAlerta)
         }
-        if(data[key].y > yLimit){
-            timeRoundAlerta=data[key].timestamp-firsttime
+        if(data[lastKey].y > yLimit){
+            timeRoundAlerta=data[lastKey].timestamp-firsttime
             timeRoundAlerta = timeRoundAlerta.toFixed(2)
             yAlertArray.push(timeRoundAlerta)
         }
-        if(data[key].z > zLimit){
-            timeRoundAlerta=data[key].timestamp-firsttime
+        if(data[lastKey].z > zLimit){
+            timeRoundAlerta=data[lastKey].timestamp-firsttime
             timeRoundAlerta = timeRoundAlerta.toFixed(2)
             zAlertArray.push(timeRoundAlerta)
         }

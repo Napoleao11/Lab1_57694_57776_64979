@@ -114,18 +114,18 @@ export default function Charts() {
             var timestampArray = times;
             
             //ALERTAS
-            if(data[key].x > xLimit){
-                timeRoundAlerta=data[key].timestamp-firstTimestamp
+            if(data[lastKey].x > xLimit){
+                timeRoundAlerta=data[lastKey].timestamp-firstTimestamp
                 timeRoundAlerta = timeRoundAlerta.toFixed(2)
                 xAlertArray.push(timeRoundAlerta)
             }
-            if(data[key].y > yLimit){
-                timeRoundAlerta=data[key].timestamp-firstTimestamp
+            if(data[lastKey].y > yLimit){
+                timeRoundAlerta=data[lastKey].timestamp-firstTimestamp
                 timeRoundAlerta = timeRoundAlerta.toFixed(2)
                 yAlertArray.push(timeRoundAlerta)
             }
-            if(data[key].z > zLimit){
-                timeRoundAlerta=data[key].timestamp-firstTimestamp
+            if(data[lastKey].z > zLimit){
+                timeRoundAlerta=data[lastKey].timestamp-firstTimestamp
                 timeRoundAlerta = timeRoundAlerta.toFixed(2)
                 zAlertArray.push(timeRoundAlerta)
             }
